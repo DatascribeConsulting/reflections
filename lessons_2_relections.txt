@@ -1,0 +1,2 @@
+git init: how to make something into a git repository (makes no commits at first)
+git status: tells you branch, commits and untracked files

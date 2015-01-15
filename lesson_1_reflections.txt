@@ -1,0 +1,28 @@
+I used diff -u oldfile newfile
+to compare 2 files, + was before each line that was added, 
+- before each line taken away. 
+
+It is important to save versions to find mistakes
+
+It will be harder to remember to save files at important points, 
+but nice that saving a file will not overwrite it.
+
+Manual saving is a nice thing, since you can commit only after making a large change.
+However, changes that are logically seperable should be commited individually.
+Google docs probably saves too many changes.
+Saving multiple files in one commit is very helpful for related files! 
+	Especially websites with HTML and CSS files
+
+Git was already installed. Version 2. something
+git log shows all the commits with some messeges 
+git diff shows insertions and deletions 
+color change was nice to show insertions as green and deletions as red
+what happens if you only change one word in a line?
+
+repository= collection of files tracked by git. 
+Repositories can interact with each other
+
+git clone copies an existing repository
+
+HEAD= current commit you are working on
+detach head by switching to previous commit
