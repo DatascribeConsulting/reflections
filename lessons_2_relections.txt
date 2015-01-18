@@ -1,2 +1,15 @@
 git init: how to make something into a git repository (makes no commits at first)
 git status: tells you branch, commits and untracked files
+
+Staging area: before you commit changes, add files to this and then commit them.
+Helps to separate files.
+
+git add: add files to the staging area
+
+git diff (no arguments): compare working directory to staging area
+git diff --staged: compare staging area and commit 1
+git diff commit1 commit2: compare 2 commits
+
+use staging area to make sure to have 1 commit per logical change by using diff commands:
+1) make change, will show up in git diff (no arguments), no changed in git diff --staged
+2) git add, change will show up in diff --staged, no changes in git diff
