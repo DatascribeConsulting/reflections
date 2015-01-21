@@ -5,3 +5,5 @@ push branches to github and it will display the commits
 password caching didn't work - try again later
 https://help.github.com/articles/caching-your-github-password-in-git/
 
+When would you want to use a remote repository rather than keeping all your work local?
+When you work with other people, or want to access your work from different computers
