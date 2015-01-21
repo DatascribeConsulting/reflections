@@ -5,5 +5,12 @@ push branches to github and it will display the commits
 password caching didn't work - try again later
 https://help.github.com/articles/caching-your-github-password-in-git/
 
+git remote: lists remote repsitories
+git remote add origin URL: url found on github when you add a new repository
+git remote -v: v=verbose, gives url for fetch and pull also 
+git push REMOTE LOCALBRANCH: in this case, git push origin master
+must be branch name, not repository name
+
+
 When would you want to use a remote repository rather than keeping all your work local?
 When you work with other people, or want to access your work from different computers
