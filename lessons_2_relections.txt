@@ -13,3 +13,48 @@ git diff commit1 commit2: compare 2 commits
 use staging area to make sure to have 1 commit per logical change by using diff commands:
 1) make change, will show up in git diff (no arguments), no changed in git diff --staged
 2) git add, change will show up in diff --staged, no changes in git diff
+
+Branches: for experimental features but want to keep version without, 
+make versions in different languages, easy and hard version, fixing bugs while others working on new features
+Master= main branch
+tip= last commit on branch
+merge= combining branches
+
+git branch NewName: create branch
+git branch: check which branch you are checking out
+
+"Branch coins set up to track remote branch coins from origin.": tells you you're on a branch not made by you
+
+git log --graph --oneline branch1 branch2: help visualize branch structure
+
+be careful about making unreachable branches
+making a commit to an old version that isn't the tip of the branch 
+would be bad! = detached head. Changes won't be seen in log
+
+git checkout -b -new_brach_name: make new branch from old commit. Do it while checking out old commit
+Equals sequence of git brach new_branch_name and git checkout new_branch_name
+
+MAKE DIAGRAMS
+
+when thinking about merging changes made by more than one person, 
+and looking at a statement that only shows up in one persons file,
+you don't know if one person added it or the other deleted it.
+You don't know if it should be in the merged file- that is why parents are important.
+When merging, you merge one branch into the other. Usually merge an updated branch into the master. 
+And delete updated branch- this only deletes label, you still have access to the commits.
+only do that after merging because deleting a branch would make commits unreachable if not merged with something before!
+
+syntax: git merge master updatedBranchName
+
+after merge and log, commits ordered by time, commits will not be after parents.
+git show: diff between commit and its parent
+
+git branch -d UpdatedBranchAfterMerge
+
+if merge doesn't work: git merge --abort
+
+ALWAYS checkout one of the two branches you want to merge, otherwise the current checkout branch will be included in the merge!!
+
+Sometimes people change same line of code and when try to merge it makes a problem.
+You have to open up the file and look for <<<<<<<< to find conflicts
+Resolve conflicts, then add file and commit it
