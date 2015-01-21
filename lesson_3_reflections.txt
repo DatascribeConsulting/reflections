@@ -1,0 +1,7 @@
+github is free if repositories are public
+
+push branches to github and it will display the commits
+
+password caching didn't work - try again later
+https://help.github.com/articles/caching-your-github-password-in-git/
+
