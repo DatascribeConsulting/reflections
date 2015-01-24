@@ -14,3 +14,34 @@ must be branch name, not repository name
 
 When would you want to use a remote repository rather than keeping all your work local?
 When you work with other people, or want to access your work from different computers
+
+git pull origin master: pulls changes from github onto local drive
+you'll want to pull changes manually to make sure when you pull things, it doesn't override changes on the local drive
+
+fork: cloning a repository on github. 
+often fork someone else's repository, then pull it down to your computer to make changes
+
+git clone URL: URL found on right of github, cloned into whatever directory you are in
+my recipes are in the reflections repository now
+
+add collaborators on github with settings options
+
+git pull origin master= git fetch origin, git merge master origin/master
+
+git branch -a: need to see remotes too
+
+fast-forward merge= if commit you are merging is an ancester of the other. 
+Merging a and b, if there is a direct route from b to a, then fast forward
+
+what is the benefit of having a copy of the last known state of the remote stored locally?
+if you cannot access the internet for a while, and want to make changes,
+your files will be as up to date as they can be
+
+make pull request to merge local branch with github remote branch, after pushing
+
+confusing to work with pull requests from more than one person. 
+If you make a pull request, than the other makes a new branch and makes a pull request to impliment a change,
+you have to pull everything down to your local master, 
+and merge the local master with your separate branch , 
+then push this branch to remote
+finally merge this branch into master, either locally or on github
